@@ -42,6 +42,15 @@ export class JogoDaVelhaComponent implements OnInit {
   	return this.jogoDaVelhaService.showFinal;
   }
 
+  /**
+   * Inicializa os dados de um novo jogo.
+   *
+   * @return void
+   */
+  iniciarJogo(): void {
+  	this.jogoDaVelhaService.iniciarJogo();
+  }
+
 
 
 }
