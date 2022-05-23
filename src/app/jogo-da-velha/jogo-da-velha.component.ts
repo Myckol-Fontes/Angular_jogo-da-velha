@@ -51,6 +51,17 @@ export class JogoDaVelhaComponent implements OnInit {
   	this.jogoDaVelhaService.iniciarJogo();
   }
 
+  /**
+   * Realiza uma jogada ao clicar um local no tabuleiro.
+   *
+   * @param number posX
+   * @param number posY
+   * @return void
+   */
+  jogar(posX: number, posY: number): void {
+  	this.jogoDaVelhaService.jogar(posX, posY);
+  }
+
 
 
 }
