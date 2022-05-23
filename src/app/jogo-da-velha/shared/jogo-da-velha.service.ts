@@ -47,6 +47,15 @@ export class JogoDaVelhaService {
     }
   }
 
+  /**
+   * Retorna se a tela de início deve ser exibida.
+   *
+   * @return boolean
+   */
+  get showInicio(): boolean {
+    return this._showInicio;
+  }
+
 
 
 }
