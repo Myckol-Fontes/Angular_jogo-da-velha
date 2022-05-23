@@ -33,6 +33,15 @@ export class JogoDaVelhaComponent implements OnInit {
   	return this.jogoDaVelhaService.showTabuleiro;
   }
 
+  /**
+   * Retorna se a tela de fim de jogo deve ser exibida.
+   *
+   * @return boolean
+   */
+  get showFinal(): boolean {
+  	return this.jogoDaVelhaService.showFinal;
+  }
+
 
 
 }
