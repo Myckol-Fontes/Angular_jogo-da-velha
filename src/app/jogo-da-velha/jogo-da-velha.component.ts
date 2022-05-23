@@ -24,6 +24,15 @@ export class JogoDaVelhaComponent implements OnInit {
   	return this.jogoDaVelhaService.showInicio;
   }
 
+  /**
+   * Retorna se o tabuleiro deve ser exibido.
+   *
+   * @return boolean
+   */
+  get showTabuleiro(): boolean {
+  	return this.jogoDaVelhaService.showTabuleiro;
+  }
+
 
 
 }
