@@ -86,6 +86,18 @@ export class JogoDaVelhaComponent implements OnInit {
   	return this.jogoDaVelhaService.exibirO(posX, posY);
   }
 
+  /**
+   * Retorna se a marcação de vitória deve ser exibida para a
+   * coordena informada.
+   *
+   * @param number posX
+   * @param number posY
+   * @return boolean
+   */
+  exibirVitoria(posX: number, posY: number): boolean {
+  	return this.jogoDaVelhaService.exibirVitoria(posX, posY);
+  }
+
 
 
 }
