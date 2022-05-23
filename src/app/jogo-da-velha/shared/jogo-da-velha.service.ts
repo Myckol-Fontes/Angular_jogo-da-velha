@@ -74,6 +74,15 @@ export class JogoDaVelhaService {
     return this._showFinal;
   }
 
+  /**
+   * Retorna o número do jogador a jogar.
+   *
+   * @return number
+   */
+  get jogador(): number {
+    return this._jogador;
+  }
+
 
 
 }
