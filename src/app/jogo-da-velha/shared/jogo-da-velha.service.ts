@@ -254,6 +254,31 @@ export class JogoDaVelhaService {
     return this.tabuleiro[posX][posY] === this.O;
   }
 
+  /**
+   * Retorna se a marcação de vitória deve ser exibida para a
+   * coordena informada.
+   *
+   * @param number posX
+   * @param number posY
+   * @return boolean
+   */
+  exibirVitoria(posX: number, posY: number): boolean {
+    let exibirVitoria: boolean = false;
+
+    if (!this.vitoria) {
+      return exibirVitoria;
+    }
+
+    for (let pos of this.vitoria) {
+      if (pos[0] === posX && pos[1] === posY) {
+        exibirVitoria = true;
+        break;
+      }
+    }
+
+    return exibirVitoria;
+  }
+
 
 
 }
