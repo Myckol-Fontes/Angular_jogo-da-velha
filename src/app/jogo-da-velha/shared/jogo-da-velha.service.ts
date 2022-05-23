@@ -65,6 +65,15 @@ export class JogoDaVelhaService {
     return this._showTabuleiro;
   }
 
+  /**
+   * Retorna se a tela de fim de jogo deve ser exibida.
+   *
+   * @return boolean
+   */
+  get showFinal(): boolean {
+    return this._showFinal;
+  }
+
 
 
 }
