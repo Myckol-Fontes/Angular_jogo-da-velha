@@ -83,6 +83,16 @@ export class JogoDaVelhaService {
     return this._jogador;
   }
 
+  /**
+   * Exibe o tabuleiro.
+   *
+   * @return void
+   */
+  iniciarJogo(): void {
+    this._showInicio = false;
+    this._showTabuleiro = true;
+  }
+
 
 
 }
