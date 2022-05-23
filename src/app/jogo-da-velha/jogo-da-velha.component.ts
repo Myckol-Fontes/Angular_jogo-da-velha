@@ -62,6 +62,30 @@ export class JogoDaVelhaComponent implements OnInit {
   	this.jogoDaVelhaService.jogar(posX, posY);
   }
 
+  /**
+   * Retorna se a peça X deve ser exibida para a
+   * coordena informada.
+   *
+   * @param number posX
+   * @param number posY
+   * @return boolean
+   */
+  exibirX(posX: number, posY: number): boolean {
+  	return this.jogoDaVelhaService.exibirX(posX, posY);
+  }
+
+  /**
+   * Retorna se a peça O deve ser exibida para a
+   * coordena informada.
+   *
+   * @param number posX
+   * @param number posY
+   * @return boolean
+   */
+  exibirO(posX: number, posY: number): boolean {
+  	return this.jogoDaVelhaService.exibirO(posX, posY);
+  }
+
 
 
 }
