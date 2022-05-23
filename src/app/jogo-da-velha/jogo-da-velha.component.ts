@@ -15,6 +15,15 @@ export class JogoDaVelhaComponent implements OnInit {
   	this.jogoDaVelhaService.inicializar();
   }
 
+  /**
+   * Retorna se a tela de início deve ser exibida.
+   *
+   * @return boolean
+   */
+  get showInicio(): boolean {
+  	return this.jogoDaVelhaService.showInicio;
+  }
+
 
 
 }
