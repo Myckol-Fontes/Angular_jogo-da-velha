@@ -56,6 +56,15 @@ export class JogoDaVelhaService {
     return this._showInicio;
   }
 
+  /**
+   * Retorna se o tabuleiro deve ser exibido.
+   *
+   * @return boolean
+   */
+  get showTabuleiro(): boolean {
+    return this._showTabuleiro;
+  }
+
 
 
 }
